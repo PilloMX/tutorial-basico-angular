@@ -1,0 +1,11 @@
+<div>
+    Tipo        
+    <input type="text" [(ngModel)]="newCar.tipo" required #tipoInput="ngModel"/>
+    <span *ngIf="!tipoInput.valid">Ingrese el valor</span>
+    <br/>
+    Descripción 
+    <input type="text" [(ngModel)]="newCar.descripcion" required #descripcionInput="ngModel"/>
+    <span *ngIf="!descripcionInput.valid">Ingrese el valor</span>
+    <br/>
+    <button (click)="onClickAgregar()">Agregar</button>
+</div>

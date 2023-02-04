@@ -1,0 +1,4 @@
+<div *ngFor="let car of carlist"  class="card">
+    <h4 *ngIf="car.tipo !== 'moto'">{{car.tipo}}</h4>
+    <p *ngIf="car.tipo !== 'moto'">{{car.descripcion}}</p>
+</div>
